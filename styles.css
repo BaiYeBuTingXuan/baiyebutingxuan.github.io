@@ -531,7 +531,7 @@ img {
 
   .education-logos img {
     max-width: 96px;
-    height: 38px;
+    height: 50px;
   }
 }
 
@@ -539,9 +539,4 @@ img {
   html {
     scroll-behavior: auto;
   }
-}
-
-.education-logos {
-  display: flex;
-  justify-content: flex-start; /* or flex-end for right alignment */
 }
