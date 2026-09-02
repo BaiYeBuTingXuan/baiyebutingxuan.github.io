@@ -144,9 +144,9 @@ img {
   display: grid;
   padding: 76px 0 70px;
   border-bottom: 1px solid var(--line);
-  grid-template-columns: minmax(0, 1fr) 230px;
+  grid-template-columns: minmax(0, 1fr) 300px;
   align-items: center;
-  gap: clamp(56px, 10vw, 110px);
+  gap: clamp(44px, 7vw, 76px);
 }
 
 .eyebrow {
@@ -206,11 +206,27 @@ img {
 }
 
 .portrait {
-  width: 230px;
+  width: 300px;
   height: auto;
   aspect-ratio: 1;
-  border-radius: 2px;
   object-fit: cover;
+  justify-self: end;
+  -webkit-mask-image: radial-gradient(
+    ellipse 76% 76% at 50% 50%,
+    #000 55%,
+    rgba(0, 0, 0, 0.92) 68%,
+    rgba(0, 0, 0, 0.5) 82%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 76% 76% at 50% 50%,
+    #000 55%,
+    rgba(0, 0, 0, 0.92) 68%,
+    rgba(0, 0, 0, 0.5) 82%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .section {
@@ -442,8 +458,9 @@ img {
   }
 
   .portrait {
-    width: 160px;
+    width: 210px;
     order: 1;
+    justify-self: start;
   }
 
   .profile h1 {
@@ -504,7 +521,7 @@ img {
   }
 
   .portrait {
-    width: 140px;
+    width: 190px;
   }
 
   .news-list li,
