@@ -272,7 +272,8 @@ img {
 .timeline-item {
   display: grid;
   padding: 0 0 28px;
-  grid-template-columns: 120px minmax(0, 1fr);
+  grid-template-columns: 120px minmax(0, 1fr) minmax(150px, auto);
+  align-items: center;
   gap: 24px;
 }
 
@@ -292,6 +293,26 @@ img {
 .timeline p {
   margin: 4px 0 0;
   color: var(--muted);
+}
+
+.education-copy {
+  min-width: 0;
+}
+
+.education-logos {
+  display: flex;
+  min-width: 150px;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.education-logos img {
+  display: block;
+  width: auto;
+  max-width: 105px;
+  height: 42px;
+  object-fit: contain;
 }
 
 .section-note {
@@ -448,8 +469,18 @@ img {
   }
 
   .timeline-item {
-    grid-template-columns: 86px minmax(0, 1fr);
+    grid-template-columns: 86px minmax(0, 1fr) minmax(130px, auto);
     gap: 16px;
+  }
+
+  .education-logos {
+    min-width: 130px;
+    gap: 12px;
+  }
+
+  .education-logos img {
+    max-width: 84px;
+    height: 36px;
   }
 
   .publication {
@@ -489,6 +520,18 @@ img {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+
+  .education-logos {
+    min-width: 0;
+    margin-top: 12px;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .education-logos img {
+    max-width: 96px;
+    height: 38px;
   }
 }
 
