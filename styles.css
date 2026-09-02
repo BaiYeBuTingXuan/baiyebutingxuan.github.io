@@ -540,3 +540,8 @@ img {
     scroll-behavior: auto;
   }
 }
+
+.education-logos {
+  display: flex;
+  justify-content: flex-start; /* or flex-end for right alignment */
+}
