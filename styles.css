@@ -209,24 +209,9 @@ img {
   width: 300px;
   height: auto;
   aspect-ratio: 1;
+  border-radius: 24px;
   object-fit: cover;
   justify-self: end;
-  -webkit-mask-image: radial-gradient(
-    ellipse 76% 76% at 50% 50%,
-    #000 55%,
-    rgba(0, 0, 0, 0.92) 68%,
-    rgba(0, 0, 0, 0.5) 82%,
-    transparent 100%
-  );
-  mask-image: radial-gradient(
-    ellipse 76% 76% at 50% 50%,
-    #000 55%,
-    rgba(0, 0, 0, 0.92) 68%,
-    rgba(0, 0, 0, 0.5) 82%,
-    transparent 100%
-  );
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
 }
 
 .section {
