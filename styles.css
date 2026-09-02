@@ -272,7 +272,7 @@ img {
 .timeline-item {
   display: grid;
   padding: 0 0 28px;
-  grid-template-columns: 120px minmax(0, 1fr) minmax(150px, auto);
+  grid-template-columns: 120px minmax(0, 1fr) minmax(0, auto);
   align-items: center;
   gap: 24px;
 }
@@ -299,19 +299,16 @@ img {
   min-width: 0;
 }
 
-.education-logos {
-  display: flex;
-  min-width: 150px;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 18px;
+.education-logo-link {
+  display: block;
+  width: 124px;
+  justify-self: end;
 }
 
-.education-logos img {
+.education-logo {
   display: block;
-  width: auto;
-  max-width: 105px;
-  height: 42px;
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -469,18 +466,12 @@ img {
   }
 
   .timeline-item {
-    grid-template-columns: 86px minmax(0, 1fr) minmax(130px, auto);
+    grid-template-columns: 86px minmax(0, 1fr) minmax(0, auto);
     gap: 16px;
   }
 
-  .education-logos {
-    min-width: 130px;
-    gap: 12px;
-  }
-
-  .education-logos img {
-    max-width: 84px;
-    height: 36px;
+  .education-logo-link {
+    width: 108px;
   }
 
   .publication {
@@ -522,16 +513,10 @@ img {
     gap: 5px;
   }
 
-  .education-logos {
-    min-width: 0;
+  .education-logo-link {
+    width: 112px;
     margin-top: 12px;
-    justify-content: flex-start;
-    gap: 16px;
-  }
-
-  .education-logos img {
-    max-width: 256px;
-    height: 50px;
+    justify-self: start;
   }
 }
 
