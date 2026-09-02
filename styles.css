@@ -233,7 +233,7 @@ img {
 .section-body,
 .timeline,
 .section-note,
-.work-list {
+.publication-list {
   min-width: 0;
 }
 
@@ -263,16 +263,10 @@ img {
 }
 
 .news-list time,
-.date,
-.work-year {
+.date {
   color: var(--subtle);
   font-size: 0.82rem;
   font-variant-numeric: tabular-nums;
-}
-
-.placeholder-row,
-.placeholder-work {
-  color: var(--subtle);
 }
 
 .timeline-item {
@@ -287,7 +281,7 @@ img {
 }
 
 .timeline h3,
-.work-copy h3 {
+.publication-copy h3 {
   margin: 0;
   color: var(--text);
   font-size: 0.98rem;
@@ -295,8 +289,7 @@ img {
   line-height: 1.5;
 }
 
-.timeline p,
-.work-copy p {
+.timeline p {
   margin: 4px 0 0;
   color: var(--muted);
 }
@@ -308,30 +301,69 @@ img {
   grid-column: 2;
 }
 
-.work-list {
+.publication-list {
   grid-column: 2;
 }
 
-.work-item {
+.publication {
   display: grid;
   padding: 28px 0;
   border-top: 1px solid var(--line);
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: 230px minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
 }
 
-.work-item:last-child {
+.publication:last-child {
   padding-bottom: 0;
 }
 
-.work-copy p {
-  max-width: 610px;
-  font-size: 0.92rem;
+.publication-image-link {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f7f7f7;
 }
 
-.work-links {
+.publication-image-link:hover {
+  border-color: #c9cdd1;
+}
+
+.publication-image {
+  width: 100%;
+  height: auto;
+}
+
+.publication-copy p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.62;
+}
+
+.publication-copy .authors strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.publication-copy .venue {
+  color: var(--text);
+  font-style: italic;
+}
+
+.publication-links {
   display: flex;
+  margin-top: 12px !important;
+  flex-wrap: wrap;
   gap: 18px;
+}
+
+.publication-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .footer {
@@ -407,7 +439,7 @@ img {
   }
 
   .section-note,
-  .work-list {
+  .publication-list {
     grid-column: 1;
   }
 
@@ -418,6 +450,15 @@ img {
   .timeline-item {
     grid-template-columns: 86px minmax(0, 1fr);
     gap: 16px;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .publication-image-link {
+    max-width: 520px;
   }
 
   .footer {
@@ -445,14 +486,9 @@ img {
   }
 
   .news-list li,
-  .timeline-item,
-  .work-item {
+  .timeline-item {
     grid-template-columns: 1fr;
     gap: 5px;
-  }
-
-  .work-item {
-    gap: 8px;
   }
 }
 

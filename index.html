@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="WANG Hejun (Martin), PhD student in Computing at The Hong Kong Polytechnic University."
+      content="WANG Hejun, PhD student in Computing at The Hong Kong Polytechnic University."
     />
     <meta name="theme-color" content="#ffffff" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="WANG Hejun (Martin)" />
+    <meta property="og:title" content="WANG Hejun" />
     <meta
       property="og:description"
       content="PhD student in Computing at The Hong Kong Polytechnic University."
@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles.css" />
-    <title>WANG Hejun (Martin)</title>
+    <title>WANG Hejun</title>
   </head>
   <body>
     <svg class="icon-sprite" aria-hidden="true">
@@ -36,6 +36,10 @@
         <path d="M10.5 13.5a4.4 4.4 0 0 0 6.2.1l2.1-2.1a4.4 4.4 0 0 0-6.2-6.2l-1.2 1.2"></path>
         <path d="M13.5 10.5a4.4 4.4 0 0 0-6.2-.1l-2.1 2.1a4.4 4.4 0 0 0 6.2 6.2l1.2-1.2"></path>
       </symbol>
+      <symbol id="icon-email" viewBox="0 0 24 24">
+        <path d="M4 6.5h16v11H4z"></path>
+        <path d="m4.7 7.2 7.3 5.6 7.3-5.6"></path>
+      </symbol>
     </svg>
 
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -45,7 +49,6 @@
         <a class="site-name" href="#top">WANG Hejun</a>
         <div class="nav-links">
           <a href="#about">About</a>
-          <!-- <a href="#news">News</a> -->
           <a href="#education">Education</a>
           <a href="#work">Recent Work</a>
         </div>
@@ -56,9 +59,7 @@
       <section class="profile" id="top" aria-labelledby="profile-title">
         <div class="profile-copy">
           <p class="eyebrow">PhD Student @ HK PolyU</p>
-          <h1 id="profile-title">
-            WANG Hejun
-          </h1>
+          <h1 id="profile-title">WANG Hejun</h1>
           <p class="affiliation">Vision Learning and Reasoning Group<br />Department of Computing<br />The Hong Kong Polytechnic University</p>
           <p class="tagline">Machine Learning · Computer Vision · Intelligent Systems</p>
           <div class="profile-links" role="group" aria-label="Profile links">
@@ -66,8 +67,13 @@
               <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
               GitHub
             </a>
-            <a href="hejun.wang@connect.polyu.hk">
-              <svg class="icon" aria-hidden="true"><use href="#icon-email"></use></svg> Email
+            <a href="https://scholar.google.com/citations?user=o8myVo8AAAAJ&amp;hl=en" target="_blank" rel="noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#icon-link"></use></svg>
+              Google Scholar
+            </a>
+            <a href="mailto:hejun.wang@connect.polyu.hk">
+              <svg class="icon" aria-hidden="true"><use href="#icon-email"></use></svg>
+              Email
             </a>
           </div>
         </div>
@@ -86,18 +92,20 @@
         <div class="section-body prose">
           <!-- EDIT INTRODUCTION: Replace the paragraphs below with your own introduction. -->
           <p>
-            I am a PhD student in <a href="https://vlar-group.github.io/" target="_blank" rel="noreferrer">Vision Learning and Reasoning Group</a> at
-            <a href="https://www.polyu.edu.hk/" target="_blank" rel="noreferrer">the Hong Kong Polytechnic University</a>.
-            My interests include Object Relighting and 3D Dynamics Learning, and Embedded AI.
+            I am a PhD student in the
+            <a href="https://vlar-group.github.io/" target="_blank" rel="noreferrer">Vision Learning and Reasoning Group</a>
+            at <a href="https://www.polyu.edu.hk/" target="_blank" rel="noreferrer">The Hong Kong Polytechnic University</a>.
+            My interests include object relighting, 3D dynamics learning, and embedded AI.
           </p>
           <p>
             Before starting my doctoral studies, I received my Bachelor of Engineering from Chu Kochen Honors College, Zhejiang University.
-            During my undergraduate studies, I was under supervision of <a href="https://person.zju.edu.cn/0097062" target="_blank" rel="noreferrer">Prof. Rong Xiong</a> and <a href="https://ywang-zju.github.io/" target="_blank" rel="noreferrer">Prof. Yue Wang</a>, where I focused on autonomous driving systems.
+            During my undergraduate studies, I was supervised by
+            <a href="https://person.zju.edu.cn/0097062" target="_blank" rel="noreferrer">Prof. Rong Xiong</a>
+            and <a href="https://ywang-zju.github.io/" target="_blank" rel="noreferrer">Prof. Yue Wang</a>, where I focused on autonomous driving systems.
           </p>
           <!-- END EDIT INTRODUCTION -->
         </div>
       </section>
-
 
       <section id="education" class="section">
         <h2>Education</h2>
@@ -110,7 +118,7 @@
             </div>
           </article>
           <article class="timeline-item">
-            <div class="date">2020 - 2024</div>
+            <div class="date">2020–2024</div>
             <div>
               <h3>Zhejiang University</h3>
               <p>B.Eng., Chu Kochen Honors College</p>
@@ -121,27 +129,43 @@
 
       <section id="work" class="section">
         <h2>Recent Work</h2>
-        <p class="section-note">Selected projects and ongoing research.</p>
+        <p class="section-note">* indicates equal contribution.</p>
 
-        <!-- EDIT RECENT WORK: Copy one <article class="work-item"> block for every project or paper. -->
-        <div class="work-list">
-          <article class="work-item">
-            <div class="work-year">2026</div>
-            <div class="work-copy">
+        <!-- EDIT RECENT WORK: Copy one publication block. Include the paper image, full title, authors, venue, Website, arXiv, and GitHub links. -->
+        <div class="publication-list">
+          <article class="publication">
+            <a
+              class="publication-image-link"
+              href="https://vlar-group.github.io/PhysInOne.html"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Open the PhysInOne project website"
+            >
+              <img
+                class="publication-image"
+                src="/figs/work/physinone.webp"
+                alt="PhysInOne dataset teaser composed of visual physics scenes"
+                width="1400"
+                height="374"
+                loading="lazy"
+              />
+            </a>
+            <div class="publication-copy">
               <h3>PhysInOne: Visual Physics Learning and Reasoning in One Suite</h3>
-              <p>
-                Data preparation and Blender rendering tools for pairing Laval illumination with Objaverse objects.
+              <p class="authors">
+                Siyuan Zhou*, <strong>Hejun Wang*</strong>, Hu Cheng*, Jinxi Li*, Dongsheng Wang*, Junwei Jiang*, Yixiao Jin*, Jiayue Huang*, Shiwei Mao*, et al.
               </p>
-              <p class="work-links">
-                <a href="https://github.com/BaiYeBuTingXuan/LavalObjaverseDataset" target="_blank" rel="noreferrer">
+              <p class="venue">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026</p>
+              <p class="publication-links">
+                <a href="https://vlar-group.github.io/PhysInOne.html" target="_blank" rel="noreferrer">Website</a>
+                <a href="https://arxiv.org/abs/2604.09415" target="_blank" rel="noreferrer">arXiv</a>
+                <a href="https://github.com/vLAR-group/PhysInOne" target="_blank" rel="noreferrer">
                   <svg class="icon" aria-hidden="true"><use href="#icon-github"></use></svg>
                   GitHub
                 </a>
               </p>
             </div>
           </article>
-
-
         </div>
         <!-- END EDIT RECENT WORK -->
       </section>
