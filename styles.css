@@ -530,7 +530,7 @@ img {
   }
 
   .education-logos img {
-    max-width: 96px;
+    max-width: 256px;
     height: 50px;
   }
 }
