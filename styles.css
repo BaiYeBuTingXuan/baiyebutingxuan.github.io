@@ -73,6 +73,11 @@ img {
   stroke-width: 1.65;
 }
 
+.icon-solid {
+  fill: currentColor;
+  stroke: none;
+}
+
 .skip-link {
   position: fixed;
   z-index: 100;
